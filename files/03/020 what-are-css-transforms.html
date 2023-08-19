@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: gainsboro;
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 5px solid #fff;
+            background-color: gray;
+            margin: 20px auto;
+            transition: transform 0.3s;
+        }
+        #rotate:hover{
+            transform: rotate(45deg);
+        }
+        #skew:hover{
+            transform: skewX(20deg);
+        }
+        #scale:hover{
+            transform: scale(1.2);
+        }
+        #translate:hover{
+            transform: translateX(50px);
+        }
+        #rotate-skew:hover{
+            transform: rotate(45deg) skewX(20deg);
+        }
+        #translate-rotate:hover{
+            transform: translateX(50px)rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="rotate"></div>
+    <div class="box" id="skew"></div>
+    <div class="box" id="scale"></div>
+    <div class="box" id="translate"></div>
+    <div class="box" id="rotate-skew"></div>
+    <div class="box" id="translate-rotate"></div>
+</body>
+</html>
